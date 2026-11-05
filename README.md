@@ -17,7 +17,7 @@
 - Trang con được hiển thị thành thẻ ngay trong trang cha; tên thẻ tự lấy từ tiêu đề trang con.
 - Khối **Chia cột** có nút **+** bên phải để thêm cột. Có thể đổi vị trí bằng nút ←/→ hoặc kéo tay nắm ⠿.
 - Khối **Bảng** có thể tạo bằng thanh công cụ hoặc `/table`, thêm hàng và cột, đổi thứ tự bằng nút mũi tên hoặc kéo tay nắm ⠿.
-- Trong khối **Process**, bấm vào vùng lớn có dòng **“Bấm vào đây rồi nhấn Ctrl+V”**, sau đó nhấn **Ctrl+V** (Mac: **⌘V**) để dán ảnh đang sao chép. Bạn cũng có thể bấm **📋 Dán ảnh** để app đọc ảnh từ bộ nhớ tạm (trình duyệt có thể hỏi quyền). Nút **Chọn tệp** riêng bên cạnh dùng để tải ảnh từ máy. Ảnh dán được nén và lưu cùng ghi chú, rồi đồng bộ qua Gist như các ảnh khác.
+- Trong khối **Process**, bấm vào vùng lớn có dòng **“Bấm vào đây rồi nhấn Ctrl+V”**, sau đó nhấn **Ctrl+V** (Mac: **⌘V**) để dán ảnh đang sao chép. Bạn cũng có thể bấm **📋 Dán ảnh** để app đọc ảnh từ bộ nhớ tạm (trình duyệt có thể hỏi quyền). Nút **Chọn tệp** riêng bên cạnh dùng để tải ảnh từ máy. Sau khi dán, **bấm vào ảnh để xem toàn ảnh ở kích thước lớn**; dùng nút ✕ hoặc phím Esc để đóng. Ô ghi chú sẽ cao bằng khung ảnh khi có ít chữ và tự dài ra khi bạn viết nhiều. Ảnh dán được nén và lưu cùng ghi chú, rồi đồng bộ qua Gist như các ảnh khác.
 
 Nội dung bên trong các trang Notion con chưa được sao chép tự động. Bản đầu đã nhập cấu trúc, tên trang và liên kết gốc.
 
