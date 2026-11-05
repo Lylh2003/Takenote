@@ -11,6 +11,9 @@
 - Đồng bộ nhiều thiết bị qua **GitHub Gist**, tương tự app tiếng Trung của bạn.
 - Thêm nhóm ở cuối trang chủ, thêm mục con trong từng nhóm, và thu gọn danh sách trang con ở thanh bên.
 - Trong trang ghi chú, dùng thanh công cụ hoặc gõ `/photo`, `/columns`, `/link`, `/Process` rồi nhấn Space. Khối Process gồm ghi chú, ảnh minh họa và mũi tên tự giãn theo nội dung; bấm dấu + để thêm bước.
+- Gõ `/` trong khối văn bản để mở danh sách lệnh; chọn bằng chuột hoặc phím mũi tên và Enter.
+- Bấm dấu `⋮` cạnh khối để xóa. App luôn hỏi xác nhận trước khi xóa trang, khối hoặc bước Process. Ngay sau khi xóa, nhấn **Ctrl+Z** (Mac: **⌘Z**) để hoàn tác trong phiên đang mở.
+- Di chuột vào thẻ nhóm ở trang chủ và bấm **🎨 Màu** để chọn màu hoặc nhập mã HEX như `#4A8EE8`.
 
 Nội dung bên trong các trang Notion con chưa được sao chép tự động. Bản đầu đã nhập cấu trúc, tên trang và liên kết gốc.
 
