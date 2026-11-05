@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eaf2ff">
+  <title>Unihan Notes</title>
+  <meta name="description" content="Không gian ghi chú cá nhân của Unihan">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="sync.css">
+</head>
+<body>
+  <div id="app">
+    <aside class="sidebar" id="sidebar" aria-label="Thanh điều hướng">
+      <div class="workspace"><span class="workspace-icon">U</span><span class="workspace-name">Unihan Notes</span><button class="icon-button sidebar-close" id="closeSidebar" aria-label="Đóng menu">✕</button></div>
+      <button class="side-action" id="searchButton"><span>⌕</span> Tìm kiếm <kbd>Ctrl K</kbd></button>
+      <button class="side-action" id="homeButton"><span>⌂</span> Trang chủ</button>
+      <button class="side-action" id="newPageButton"><span>＋</span> Trang mới</button>
+      <div class="side-label">YÊU THÍCH</div><div id="favoritesNav"></div>
+      <div class="side-label side-label-pages">TRANG CỦA TÔI</div><div id="pageNav"></div>
+      <div class="sidebar-bottom"><button class="side-action" id="settingsButton"><span>⚙</span> Đồng bộ & cài đặt</button><div id="syncStatus" class="sync-status">Đang lưu trên thiết bị này</div></div>
+    </aside>
+    <div class="sidebar-shade" id="sidebarShade"></div>
+    <main class="main">
+      <header class="topbar"><button class="icon-button menu-button" id="openSidebar" aria-label="Mở menu">☰</button><div id="breadcrumbs" class="breadcrumbs"></div><div class="top-actions"><span id="saveStatus" class="save-status">Đã lưu</span><button class="icon-button" id="favoriteButton" title="Yêu thích" aria-label="Yêu thích">☆</button><button class="icon-button" id="moreButton" title="Tùy chọn trang" aria-label="Tùy chọn trang">⋯</button></div></header>
+      <div id="view"></div>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status"></div>
+  <dialog id="searchDialog" class="modal search-modal"><div class="search-line"><span>⌕</span><input id="searchInput" placeholder="Tìm một trang..." autocomplete="off"><button class="icon-button" data-close="searchDialog" aria-label="Đóng">✕</button></div><div id="searchResults" class="search-results"></div></dialog>
+  <dialog id="settingsDialog" class="modal settings-modal"><div class="modal-head"><h2>☁️ Đồng bộ & sao lưu</h2><button class="icon-button" data-close="settingsDialog" aria-label="Đóng">✕</button></div><p>Ghi chú được lưu trên thiết bị này. Bạn có thể kết nối GitHub Gist để tự đồng bộ giữa điện thoại và máy tính, giống app tiếng Trung.</p><div id="syncConnectPanel"><ol class="setup-steps"><li>Mở <a href="https://github.com/settings/tokens/new?scopes=gist&amp;description=Unihan-Notes" target="_blank" rel="noopener noreferrer">trang tạo mã truy cập GitHub</a>.</li><li>Kiểm tra quyền <strong>gist</strong>, chọn thời hạn mã rồi tạo và sao chép mã.</li><li>Dán mã bên dưới và bấm <strong>Kết nối</strong>. Làm tương tự trên thiết bị còn lại.</li></ol><label>Mã truy cập GitHub<input id="gistToken" type="password" placeholder="ghp_..." autocomplete="off" spellcheck="false"></label><button class="primary-button" id="connectGist">Kết nối</button></div><div id="syncActivePanel" hidden><p id="syncDetail"></p><button class="primary-button" id="syncNow">Đồng bộ ngay</button> <button class="secondary-button" id="disconnectGist">Ngắt kết nối máy này</button></div><div id="syncChoicePanel" class="sync-choice" hidden><strong>Có hai bản ghi chú khác nhau</strong><p>Chọn bản chính để tiếp tục. Bản còn lại sẽ bị thay thế; bạn có thể tải bản sao lưu trước khi chọn.</p><button class="primary-button" id="chooseRemote">☁️ Dùng bản trên GitHub</button> <button class="secondary-button" id="chooseLocal">💻 Giữ bản trên máy này</button></div><div class="settings-divider"></div><button class="secondary-button" id="backupButton">⬇️ Tải file sao lưu</button><p class="settings-tip">Gist không được liệt kê công khai nhưng ai có đường dẫn vẫn có thể đọc ghi chú. Mã truy cập được lưu trong trình duyệt của từng thiết bị; đừng gửi mã trong chat hoặc đưa vào repository công khai.</p></dialog>
+  <input type="file" id="imagePicker" accept="image/*" hidden>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
