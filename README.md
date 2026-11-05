@@ -14,6 +14,9 @@
 - Gõ `/` trong khối văn bản để mở danh sách lệnh; chọn bằng chuột hoặc phím mũi tên và Enter.
 - Bấm dấu `⋮` cạnh khối để xóa. App luôn hỏi xác nhận trước khi xóa trang, khối hoặc bước Process. Ngay sau khi xóa, nhấn **Ctrl+Z** (Mac: **⌘Z**) để hoàn tác trong phiên đang mở.
 - Di chuột vào thẻ nhóm ở trang chủ và bấm **🎨 Màu** để chọn màu hoặc nhập mã HEX như `#4A8EE8`.
+- Trang con được hiển thị thành thẻ ngay trong trang cha; tên thẻ tự lấy từ tiêu đề trang con.
+- Khối **Chia cột** có nút **+** bên phải để thêm cột. Có thể đổi vị trí bằng nút ←/→ hoặc kéo tay nắm ⠿.
+- Khối **Bảng** có thể tạo bằng thanh công cụ hoặc `/table`, thêm hàng và cột, đổi thứ tự bằng nút mũi tên hoặc kéo tay nắm ⠿.
 
 Nội dung bên trong các trang Notion con chưa được sao chép tự động. Bản đầu đã nhập cấu trúc, tên trang và liên kết gốc.
 
