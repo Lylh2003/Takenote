@@ -1,4 +1,4 @@
-# Unihan Notes
+# Ly's Notes
 
 Ứng dụng ghi chú cá nhân lấy bố cục trang chủ từ trang Notion **Unihan**, với tông xanh dương. Chạy trên điện thoại và máy tính bằng GitHub Pages. Không cần bước build, không cần Supabase.
 
@@ -9,6 +9,8 @@
 - Trình soạn thảo khối cơ bản: văn bản, tiêu đề, gạch đầu dòng, trích dẫn và việc cần làm. Gõ `/h1`, `/h2`, `/bullet`, `/quote`, `/todo` rồi nhấn Space để đổi kiểu.
 - Tải ảnh bìa từ thiết bị. Ghi chú được lưu trong trình duyệt ngay cả khi chưa kết nối GitHub.
 - Đồng bộ nhiều thiết bị qua **GitHub Gist**, tương tự app tiếng Trung của bạn.
+- Thêm nhóm ở cuối trang chủ, thêm mục con trong từng nhóm, và thu gọn danh sách trang con ở thanh bên.
+- Trong trang ghi chú, dùng thanh công cụ hoặc gõ `/photo`, `/columns`, `/link`, `/Process` rồi nhấn Space. Khối Process gồm ghi chú, ảnh minh họa và mũi tên tự giãn theo nội dung; bấm dấu + để thêm bước.
 
 Nội dung bên trong các trang Notion con chưa được sao chép tự động. Bản đầu đã nhập cấu trúc, tên trang và liên kết gốc.
 

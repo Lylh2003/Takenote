@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#eaf2ff">
-  <title>Unihan Notes</title>
-  <meta name="description" content="Không gian ghi chú cá nhân của Unihan">
+  <title>Ly's Notes</title>
+  <meta name="description" content="Không gian ghi chú cá nhân của Ly">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="sync.css">
+  <link rel="stylesheet" href="features.css">
 </head>
 <body>
   <div id="app">
     <aside class="sidebar" id="sidebar" aria-label="Thanh điều hướng">
-      <div class="workspace"><span class="workspace-icon">U</span><span class="workspace-name">Unihan Notes</span><button class="icon-button sidebar-close" id="closeSidebar" aria-label="Đóng menu">✕</button></div>
+      <div class="workspace"><span class="workspace-icon">L</span><span class="workspace-name">Ly's Notes</span><button class="icon-button sidebar-close" id="closeSidebar" aria-label="Đóng menu">✕</button></div>
       <button class="side-action" id="searchButton"><span>⌕</span> Tìm kiếm <kbd>Ctrl K</kbd></button>
       <button class="side-action" id="homeButton"><span>⌂</span> Trang chủ</button>
       <button class="side-action" id="newPageButton"><span>＋</span> Trang mới</button>
@@ -22,7 +23,7 @@
     </aside>
     <div class="sidebar-shade" id="sidebarShade"></div>
     <main class="main">
-      <header class="topbar"><button class="icon-button menu-button" id="openSidebar" aria-label="Mở menu">☰</button><div id="breadcrumbs" class="breadcrumbs"></div><div class="top-actions"><span id="saveStatus" class="save-status">Đã lưu</span><button class="icon-button" id="favoriteButton" title="Yêu thích" aria-label="Yêu thích">☆</button><button class="icon-button" id="moreButton" title="Tùy chọn trang" aria-label="Tùy chọn trang">⋯</button></div></header>
+      <header class="topbar"><button class="icon-button menu-button" id="openSidebar" aria-label="Mở menu">☰</button><div id="breadcrumbs" class="breadcrumbs"></div><div class="top-actions"><span id="saveStatus" class="save-status">Đã lưu</span><button class="icon-button" id="favoriteButton" title="Yêu thích" aria-label="Yêu thích">☆</button><button class="sync-chip" id="topSyncButton" title="Mở đồng bộ"><span class="sync-chip-dot"></span><span id="topSyncText">Đồng bộ</span></button></div></header>
       <div id="view"></div>
     </main>
   </div>
